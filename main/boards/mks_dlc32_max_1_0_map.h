@@ -23,8 +23,6 @@
 #error "This board has ESP32-S3 processor, select a corresponding build!"
 #endif
 
-#define USB_SERIAL_ENABLE 0
-
 #if N_ABC_MOTORS > 0
 #error "Axis configuration is not supported!"
 #endif
