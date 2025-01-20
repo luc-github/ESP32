@@ -36,7 +36,7 @@
 #endif
 
 #define SERIAL1_PORT 
-#define UART1_RX_PIN            GPIO_NUM_16
+#define UART1_RX_PIN            GPIO_NUM_18
 #define UART1_TX_PIN            GPIO_NUM_17
 
 // Define step pulse output pins.
