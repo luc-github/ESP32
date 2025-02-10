@@ -42,7 +42,7 @@
 //#define BOARD_GENERIC_S3              // Generic map for ESP32-S3, untested - WIP!
 //#define BOARD_GENERIC_I2S_S3          // Generic map for ESP32-S3 with I2S shift registers for I/O expansion, untested - WIP!
 //#define BOARD_MY_MACHINE              // Add my_machine_map.h in the boards directory before enabling this!
-//#define BOARD_MKS_DLC32_MAX_V1        // Has a ESP32-S3 MCU
+#define BOARD_MKS_DLC32_MAX_V1        // Has a ESP32-S3 MCU
 
 // Configuration
 // Uncomment to enable, for some a value > 1 may be assigned, if so the default value is shown.
@@ -58,20 +58,20 @@
 // Spindle definitions can be found in grbl/spindle_control.h.
 // More here https://github.com/grblHAL/Plugins_spindle
 //#define SPINDLE0_ENABLE         SPINDLE_HUANYANG1
-//#define SPINDLE1_ENABLE         SPINDLE_PWM0_NODIR
+#define SPINDLE0_ENABLE         SPINDLE_PWM0_NODIR
 //#define SPINDLE2_ENABLE         SPINDLE_NONE
 //#define SPINDLE3_ENABLE         SPINDLE_NONE
 //#define SPINDLE_OFFSET          1 // Uncomment to enable settings for laser spindle XY-offset.
 // **********************
 //#define MODBUS_ENABLE           1 // Set to 1 for auto direction, 2 for direction signal on auxiliary output pin.
-//#define WEBUI_ENABLE            3 // Enable ESP3D-WEBUI plugin along with networking and SD card plugins.
+#define WEBUI_ENABLE            3 // Enable ESP3D-WEBUI plugin along with networking and SD card plugins.
 //#define WEBUI_AUTH_ENABLE       1 // Enable ESP3D-WEBUI authentication.
-//#define WIFI_ENABLE             1 //
+#define WIFI_ENABLE             1 //
 //#define WIFI_SOFTAP             1 // Use Soft AP mode for WiFi.
 //#define ETHERNET_ENABLE         1 // Ethernet streaming. Uses networking plugin.
 //#define BLUETOOTH_ENABLE        1 // Set to 1 for native radio, 2 for HC-05 module.
-//#define SDCARD_ENABLE           1 // Run gcode programs from SD card. Set to 2 to enable YModem upload.
-//#define LITTLEFS_ENABLE         1 // Enable flash based storage, automatically enabled if WebUI is enabled. Set to 2 to mount as root.
+#define SDCARD_ENABLE           1 // Run gcode programs from SD card. Set to 2 to enable YModem upload.
+#define LITTLEFS_ENABLE         1 // Enable flash based storage, automatically enabled if WebUI is enabled. Set to 2 to mount as root.
 //#define MPG_ENABLE              1 // Enable MPG interface. Requires a serial stream and means to switch between normal and MPG mode.
                                     // 1: Mode switching is by handshake pin.
                                     // 2: Mode switching is by the CMD_MPG_ENABLE_TOGGLE (0x8B) command character.
@@ -144,9 +144,9 @@
 //#define NETWORK_STA_GATEWAY     "192.168.5.1"
 //#define NETWORK_STA_MASK        "255.255.255.0"
 #if WIFI_SOFTAP
-//#define NETWORK_AP_SSID         "grblHAL_AP"
-//#define NETWORK_AP_PASSWORD     "grblHALap"
-//#define NETWORK_AP_HOSTNAME     "grblHAL_AP"
+#define NETWORK_AP_SSID         "grblHAL_AP"
+#define NETWORK_AP_PASSWORD     "12345678"
+#define NETWORK_AP_HOSTNAME     "grblHAL_AP"
 //#define NETWORK_AP_IPMODE       0              // Do not change!
 //#define NETWORK_AP_IP           "192.168.4.1"  // Do not change!
 //#define NETWORK_AP_GATEWAY      "192.168.4.1"  // Do not change!
